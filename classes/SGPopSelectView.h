@@ -14,6 +14,7 @@ typedef void (^PopViewSelectedHandle) (NSInteger selectedIndex);
 @property (nonatomic, strong) NSArray *selections;
 @property (nonatomic, copy) PopViewSelectedHandle selectedHandle;
 @property (nonatomic, readonly) BOOL visible;
+@property (nonatomic, strong) NSString *selectedString;
 
 - (instancetype)init;
 - (void)showFromView:(UIView*)view atPoint:(CGPoint)point animated:(BOOL)animated;

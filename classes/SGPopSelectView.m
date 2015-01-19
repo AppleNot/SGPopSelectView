@@ -87,6 +87,11 @@
     [_tableView reloadData];
 }
 
+- (void)setSelectedString:(NSString *)selectedString {
+    _selectedString = selectedString;
+    _selectedIndex = [self.selections indexOfObject:selectedString];
+}
+
 #pragma mark - Private Methods
 
 static CAAnimation* _showAnimation()
